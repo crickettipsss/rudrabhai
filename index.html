@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050b18">
+<title>Rudra Yadav 🔱</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+  background: #030711;
+}
+
+body {
+  min-height: 100vh;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at top, #102b48 0%, #060d1b 48%, #02050c 100%);
+  overflow-x: hidden;
+}
+
+.page {
+  width: 100%;
+  max-width: 355px;
+  position: relative;
+  padding: 24px 17px 17px;
+  text-align: center;
+  border: 1.5px solid #21d9ff;
+  border-radius: 20px;
+  background: linear-gradient(160deg,
+    rgba(12, 29, 51, 0.98),
+    rgba(3, 10, 23, 0.99));
+  box-shadow:
+    0 0 8px #00cfff,
+    0 0 22px rgba(0, 195, 255, 0.35),
+    inset 0 0 17px rgba(0, 195, 255, 0.08);
+  animation: borderGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes borderGlow {
+  from {
+    box-shadow: 0 0 7px #00cfff,
+                0 0 15px rgba(0,195,255,.25),
+                inset 0 0 10px rgba(0,195,255,.06);
+  }
+  to {
+    box-shadow: 0 0 12px #00e5ff,
+                0 0 27px rgba(0,195,255,.45),
+                inset 0 0 16px rgba(0,195,255,.12);
+  }
+}
+
+.logo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #31dcff;
+  box-shadow: 0 0 13px #00cfff, 0 0 24px #006eff;
+  margin: 0 auto 14px;
+  display: block;
+  animation: floatLogo 3s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 195, 255, .65);
+  overflow-wrap: anywhere;
+}
+
+.tagline {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #b9eaff;
+  margin-bottom: 17px;
+}
+
+.countdown {
+  display: inline-block;
+  padding: 9px 11px;
+  margin-bottom: 17px;
+  border: 1px solid #ffcf35;
+  border-radius: 8px;
+  background: rgba(255, 191, 0, .08);
+  color: #ffdc53;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(255, 196, 0, .13);
+}
+
+#timer {
+  display: inline-block;
+  min-width: 19px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.join-btn {
+  width: 100%;
+  min-height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 8px;
+  border: 1px solid #ffe875;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffe84b, #ffb900);
+  color: #08101d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .2px;
+  box-shadow: 0 0 13px rgba(255, 195, 0, .35);
+  animation: buttonFloat 2.4s ease-in-out infinite;
+  transition: filter .2s ease;
+}
+
+.join-btn:hover {
+  filter: brightness(1.1);
+}
+
+.telegram-icon {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+}
+
+@keyframes buttonFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.divider {
+  height: 1px;
+  margin: 19px 0 13px;
+  background: linear-gradient(90deg,
+    transparent, #16d9ff, #b6f6ff, #16d9ff, transparent);
+}
+
+.disclaimer {
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: #aebfd1;
+  overflow-wrap: anywhere;
+}
+
+.ad-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 7px 12px;
+  border: 1px solid rgba(0, 220, 255, .4);
+  border-radius: 7px;
+  color: #53e6ff;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 0 9px rgba(0, 220, 255, .12);
+}
+
+@media (max-width: 360px) {
+  body { padding: 12px 9px; }
+  .page { padding: 21px 14px 15px; }
+  h1 { font-size: 23px; }
+  .logo { width: 80px; height: 80px; }
+  .join-btn { font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+</head>
+
+<body>
+<main class="page">
+
+  <img src="logo.jpg" alt="Rudra Yadav Logo" class="logo">
+
+  <h1>Rudra Yadav 🔱</h1>
+
+  <p class="tagline">
+    Accurate analysis • Match Update · Right Pred!ction
+  </p>
+
+  <div class="countdown">
+    FREE JOINING ENDS IN <span id="timer">30</span>s
+  </div>
+
+  <a class="join-btn"
+     href="https://t.me/+FKO8FuwHZftmOWNl"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <svg class="telegram-icon" viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg"
+         aria-hidden="true">
+      <path fill="#08101d"
+        d="M21.7 3.3a1.7 1.7 0 0 0-1.8-.3L2.5 9.7c-1.2.5-1.2 1.4-.2 1.8l4.5 1.4 1.7 5.3c.2.6.1.8.7.8.5 0 .7-.2.9-.4l2.6-2.5 4.6 3.4c.9.5 1.6.2 1.8-.8l3-13.9c.2-.7-.1-1.2-.4-1.5ZM8 12.6l9.9-6.2c.5-.3.9-.1.5.2l-8.2 7.4-.3 3.3L8 12.6Z"/>
+    </svg>
+
+    JOIN TELEGRAM NOW
+  </a>
+
+  <div class="divider"></div>
+
+  <p class="disclaimer">
+    Disclaimer: This channel shares cricket updates,
+    analysis, and general information for fans. It does
+    not promote betting or gambling. No outcomes are
+    guaranteed. Please verify independently and act
+    responsibly.
+  </p>
+
+  <a class="ad-link"
+     href="https://t.me/+4I3Ss-TD1hI5NGE1"
+     target="_blank"
+     rel="noopener noreferrer">
+    Ads By @PrinceAds9xz
+  </a>
+
+</main>
+
+<script>
+(function () {
+  let remaining = 30;
+  const timer = document.getElementById("timer");
+
+  function updateCountdown() {
+    timer.textContent = remaining;
+    remaining = remaining <= 1 ? 30 : remaining - 1;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+})();
+</script>
+
+</body>
+</html>
